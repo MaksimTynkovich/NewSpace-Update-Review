@@ -1,0 +1,160 @@
+.logo{
+  fill: #161619;
+  transition: .4s;
+}
+
+[data-theme="dark"] .logo{
+  fill: #F2F2F2;
+  transition: .4s;
+}
+
+
+
+[data-theme="dark"] .header {
+  color: #fff;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background-color: #161619;
+  transition: .4s;
+}
+
+.header{
+  color: #161619;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background-color: #fff;
+  transition: .4s;
+  
+}
+
+
+.header__nav{
+  margin-top: 28px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.search{
+  stroke: #161619;
+  transition: .4s;
+}
+
+[data-theme="dark"] .search{
+  stroke: #fff;
+  transition: .4s;
+}
+
+.header__search{
+  cursor: pointer;
+}
+
+.nav__left{
+  margin-top: 14px;
+  display: flex;
+}
+
+.nav__right{
+  margin-top: 14px;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.header__icon{
+  margin-right: 30px;
+  height: 10px;
+}
+
+.header__lang{
+  display: flex;
+}
+
+.header__lang__ru{
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.header__lang__en{
+  cursor: pointer;
+  color: #BFC6CE;
+  transition: .4s;
+}
+
+[data-theme="dark"] .header__lang__en{
+  cursor: pointer;
+  color: #646A6F;
+  transition: .4s;
+}
+
+.header__theme{
+  display: block;
+  cursor: pointer;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.menu__linens{
+  margin-top: -2px;
+  position: absolute;
+}
+
+.header__enter{
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  position: relative;
+  width: 25px;
+  margin-top: 13px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 50px;
+  background-color: #161619;
+  transition: .4s;
+}
+
+[data-theme="dark"] .menu__btn > span{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 50px;
+  background-color: #fff;
+  transition: .4s;
+}
+
+[data-theme='dark'] .menu__btn > span::before{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 50px;
+  background-color: #fff;
+  transition: .4s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -10px;
+}
+
+.header__icon{
+  cursor: pointer;
+}

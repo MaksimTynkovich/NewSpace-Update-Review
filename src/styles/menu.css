@@ -1,0 +1,255 @@
+.menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 70%;
+    transform: translateX(130%);
+    transition: .3s;
+    z-index: 1000;
+}
+
+.menu.active{
+    transform: translateX(0);
+    transition: .3s;
+}
+
+.blur{
+    width: 100vw;
+    height: 100vh;
+    right: 100%;
+    backdrop-filter: blur(3px);
+    position: absolute;
+}
+
+
+.menu__content {
+    overflow: auto;
+    width: 597px;
+    height: 100%;
+    background-color: #fff;
+    transition: .4s;
+}
+
+[data-theme='dark'] .menu__content{
+    background-color: #161619;
+    transition: .4s;
+}
+
+.menu__content .inner{
+    padding-top: 51px;
+    margin-left: 60px;
+}
+
+.burger-btn{
+    cursor: pointer;
+    font-size: 38px;
+    margin-left: 220px;
+}
+
+.burger-btn__svg{
+    fill: #161619;
+}
+
+[data-theme='dark'] .burger-btn__svg{
+    fill: #F2F2F2;
+}
+
+.popup__content{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.comment__input{
+    resize: none;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    outline: none;
+    border: none;
+    width: 413px;
+    height: 80px;
+    font-size: 15px;
+}
+
+.comment__input::placeholder{
+    color: #BFC6CE;
+}
+
+[data-theme='dark'] .comment__input{
+    background-color: #161619;
+    color: #F2F2F2;
+}
+
+.comment__like svg{
+    cursor: pointer;
+}
+
+.menu__header{
+    color: #161619;
+    font-family: 'Exo 2', sans-serif;
+}
+
+[data-theme='dark'] .menu__header{
+    color: #fff
+}
+
+
+#response{
+    display: none;
+    display: flex;
+    margin-left: 230px;
+}
+
+#response .comment__cancellation{
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+#response .comment__send{
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.comment__input:focus + #response .comment__cancellation{
+    visibility: visible;
+    transition: .4s;
+    opacity: 1;
+}
+
+.comment__input:focus + #response .comment__send{
+    visibility: visible;
+    transition: .4s;
+    opacity: 1;
+}
+
+.comment__cancellation{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 120%;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #646A6F;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+[data-theme='dark'] .comment__cancellation{
+    color: #F2F2F2
+}
+
+.comment__send{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 120%;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #D93D3D;
+    cursor: pointer;
+}
+
+.popup__content input::placeholder{
+    color: #BFC6CE;
+}
+
+.user__comment{
+    margin-top: 50px;
+}
+
+.user__inner{
+    display: flex;
+}
+
+.user__info{
+    margin-left: 9px;
+}
+
+.user__name{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 140%;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #161619; 
+}
+
+[data-theme='dark'] .user__name{
+    color: #F2F2F2;
+}
+
+.user__time{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 135%;
+    font-size: 14px;
+    color: #646A6F;
+}
+
+.comment__text{
+    margin-top: 14px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 130%;
+    font-size: 18px;
+    color: #161619;
+    width: 80%;
+}
+
+[data-theme='dark'] .comment__text{
+    color: #F2F2F2;
+}
+
+.comment__response{
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.comment__answer{
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 120%;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #BFC6CE;
+}
+
+.comment__like{
+    display: flex;
+}
+
+.reply__post{
+    margin-left: 39px;
+    display: flex;
+}
+
+.reply__line{
+    margin-top: 55px;
+    margin-right: 18px;
+}
+
+.reply__post .comment__text{
+    width: 70%;
+}
+
+.reply__post .comment__response{
+    width: 333px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
