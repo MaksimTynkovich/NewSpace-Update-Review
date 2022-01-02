@@ -38,13 +38,13 @@
 
 .menu__content .inner{
     padding-top: 51px;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .burger-btn{
     cursor: pointer;
     font-size: 38px;
-    margin-left: 220px;
+    margin-left: 200px;
 }
 
 .burger-btn__svg{
@@ -57,7 +57,7 @@
 
 .popup__content{
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .comment__input{
@@ -99,7 +99,7 @@
 #response{
     display: none;
     display: flex;
-    margin-left: 230px;
+    margin-left: 200px;
 }
 
 #response .comment__cancellation{
