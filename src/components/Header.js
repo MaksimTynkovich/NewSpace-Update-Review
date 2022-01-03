@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import '../styles/Header.css';
 
-
 function Header() {
+
     let [check, setCheck] = useState(false)
     function switchMode() {
         if (document.documentElement.hasAttribute('data-theme')) {
@@ -21,7 +21,7 @@ function Header() {
         }
     }
     return (
-        <div className="header">
+        <div className="header" >
             <div className="container">
                 <div className="header__nav">
                     <div className="nav__left">

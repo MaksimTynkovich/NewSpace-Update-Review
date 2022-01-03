@@ -36,12 +36,11 @@
 
 .header__nav{
   margin-top: 28px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   display: flex;
 }
 
 .search{
-  stroke: #161619;
   transition: .4s;
 }
 
@@ -51,6 +50,7 @@
 }
 
 .header__search{
+  margin-right: 466px;
   cursor: pointer;
 }
 
@@ -60,6 +60,7 @@
 }
 
 .nav__right{
+  margin-left: 325px;
   margin-top: 14px;
   display: flex;
   text-transform: uppercase;
