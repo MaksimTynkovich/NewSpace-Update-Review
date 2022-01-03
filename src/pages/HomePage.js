@@ -2,7 +2,6 @@ import Header from '../components/Header';
 import Slider from '../components/Slider'
 import Posts from '../components/Posts'
 import '../styles/HomePage.css'
-import Clock from 'react-live-clock';
 
 function HomePage() {
 
@@ -14,7 +13,7 @@ function HomePage() {
                 <div className='header__after__inner'>
                     <div className='header__after__countdown'>
                         <div className='header__after__start'>Запуск <span className="header__after__span">SpaceX Crew-3</span> через</div>
-                        <div className='header__after__timer'>20 <span className='format'>д</span> <span className="colon">:</span><Clock format={'hh'} ticking={true} timezone={'US/Pacific'} /> <span className='format'>ч</span> <span className="colon">:</span><Clock format={'mm'} ticking={true} timezone={'US/Pacific'} /> <span className='format'>м</span> <span className="colon">:</span><Clock format={'ss'} ticking={true} timezone={'US/Pacific'} /> <span className='format'>с</span></div>
+                        <div className='header__after__timer'>10 <span className='format'>д</span> <span className="colon">:</span>20 <span className='format'>ч</span> <span className="colon">:</span>26<span className='format'>м</span> <span className="colon">:</span>20 <span className='format'>с</span></div>
                     </div>
                     <div className='header__after__stream'>
                         <div className='stream__text'>смотреть эфир</div><div className="stream__arrow"><svg className='stream__svg' xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
