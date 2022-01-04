@@ -24,7 +24,32 @@ body{
 
 .btn__back .stack{
     margin-left: 17px;
+    transition: .4s;
 }
+
+.btn__back svg{
+    stroke: #D93D3D;
+    transition: .4s;
+}
+
+.btn__back:hover svg{
+    stroke: #E45C5C;
+    transition: .4s;
+}
+
+.btn__back:active svg{
+    stroke: #AB3535;
+}
+
+.btn__back .stack:hover{
+    color: #E45C5C;
+    transition: .4s;
+}
+
+.btn__back .stack:active{
+    color: #AB3535;
+}
+
 
 .btn__back .svg{
     margin-top: 1px;
@@ -80,6 +105,24 @@ body{
 
 .post__like svg{
     cursor: pointer;
+    stroke: #BFC6CE;
+    transition: .2s;
+}
+
+.post__like svg:hover{
+    cursor: pointer;
+    stroke: #fff;
+    transition: .2s;
+}
+
+.post__like svg:hover{
+    cursor: pointer;
+    stroke: #fff;
+    transition: .2s;
+}
+
+.post__like svg:active{
+    stroke: #D93D3D;
 }
 
 .post__share{
@@ -273,7 +316,28 @@ body{
     letter-spacing: 0.05em;
     color: #D93D3D;
     margin-top: 30px;
+    transition: color .4s;
 }
+
+.donate__link:hover{
+    color: #E45C5C;
+    transition: .4s;
+}
+
+.donate__link__svg{
+    stroke: #D93D3D;
+}
+
+.donate__link:hover .donate__link__svg{
+    stroke: #D93D3D;
+    transition: .4s;
+}
+
+.donate__link:active .donate__link__svg{
+    stroke: #AB3535;
+    transition: .4s;
+}
+
 
 .donate__link svg{
     margin-left: 12px;

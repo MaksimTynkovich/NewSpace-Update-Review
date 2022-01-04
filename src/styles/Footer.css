@@ -172,10 +172,16 @@
     margin-right: 20px;
 }
 
-.instagram__svg{
-    stroke: #F6F6F7;
+.inst__svg{
+    fill: #646A6F;
+    transition: .4s;
 }
 
-[data-theme='dark'] .instagram__svg{
-    stroke: #161619;
+.instagram:hover .inst__svg{
+    fill: #E45C5C;
+    transition: .4s;
+}
+
+.instagram:active .inst__svg{
+    fill: #AB3535;
 }

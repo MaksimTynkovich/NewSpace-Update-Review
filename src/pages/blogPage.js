@@ -12,12 +12,13 @@ import Menu from '../components/menu'
 
 function BlogPage() {
   const [menuActive, setMenuActive] = useState(false)
+
   return (
     <div>
       <Header />
       <div className='container'>
         <div className='btn__back'><Link to='/'><div className='svg'><svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 9 14" fill="none">
-          <path d="M8 1L2 7L8 13" stroke="#D93D3D" stroke-width="1.5" />
+          <path d="M8 1L2 7L8 13" stroke-width="1.5" />
         </svg></div> <div className='stack'>технологии</div></Link></div>
         <div className='post'>
           <div className='post__title'>Поставщики <span>Tesla</span> приостанавливают производство некоторых компонентов из-за проблем с электричеством </div>
@@ -26,7 +27,7 @@ function BlogPage() {
               <div className='post__date'>26 ноября, 2021</div>
               <div className='post__other'>
                 <div className='post__like'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 24 21" fill="none">
-                  <path d="M7.05 1C3.70875 1 1 3.72607 1 7.08868C1 13.1774 8.15 18.7125 12 20C15.85 18.7125 23 13.1774 23 7.08868C23 3.72607 20.2913 1 16.95 1C14.904 1 13.0945 2.02235 12 3.58714C11.4421 2.78742 10.701 2.13476 9.83934 1.68442C8.9777 1.23407 8.02091 0.999311 7.05 1Z" stroke="#BFC6CE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M7.05 1C3.70875 1 1 3.72607 1 7.08868C1 13.1774 8.15 18.7125 12 20C15.85 18.7125 23 13.1774 23 7.08868C23 3.72607 20.2913 1 16.95 1C14.904 1 13.0945 2.02235 12 3.58714C11.4421 2.78742 10.701 2.13476 9.83934 1.68442C8.9777 1.23407 8.02091 0.999311 7.05 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg><div className='like__count'>230</div></div>
                 <div className='post__favorite'>
                   <svg fill="#BFC6CE" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28px" height="26px"><path d="M 7 5 L 7 28 L 8.59375 26.8125 L 16 21.25 L 23.40625 26.8125 L 25 28 L 25 5 Z M 9 7 L 23 7 L 23 24 L 16.59375 19.1875 L 16 18.75 L 15.40625 19.1875 L 9 24 Z" /></svg>
@@ -104,8 +105,8 @@ function BlogPage() {
                   <div className='inner'>
                     <div className='donate__block'>Нам очень нужна ваша помощь!
                       <div className='donate__link'> <p> поддержать проект </p><div> <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
-                        <path d="M0 8.5H17" stroke="#D93D3D" stroke-width="1.5" />
-                        <path d="M9.27295 16L17.0002 8.5L9.27295 1" stroke="#D93D3D" stroke-width="1.5" />
+                        <path d="M0 8.5H17" className='donate__link__svg' stroke-width="1.5" />
+                        <path d="M9.27295 16L17.0002 8.5L9.27295 1" className='donate__link__svg' stroke-width="1.5" />
                       </svg></div></div>
                     </div>
                     <div className='donate__block'>Пожалуйста, поддержите нас, чтобы мы могли    и дальше делиться с вами самыми свежими и интересными новостями.</div>

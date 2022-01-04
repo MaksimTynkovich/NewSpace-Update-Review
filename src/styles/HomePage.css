@@ -133,6 +133,12 @@ a{
     transition: .4s;
 }
 
+
+.header__after__stream:active .stream__text{
+    color: #AB3535;
+    transition: .4s;
+}
+
 .stream__svg{
     transition: .4s;
     stroke: #D93D3D;
@@ -140,6 +146,11 @@ a{
 
 .header__after__stream:hover .stream__svg{
     stroke: #E45C5C;
+    transition: .4s;
+}
+
+.header__after__stream:active .stream__svg{
+    stroke: #AB3535;
     transition: .4s;
 }
 

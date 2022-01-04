@@ -47,6 +47,10 @@
     transition: .4s;
 }
 
+.slider__tag:active{
+    background-color: #AB3535;
+}
+
 .slider__title{
     font-size: 44px;
     text-transform: uppercase;
@@ -72,6 +76,10 @@
     transition: .4s;
 }
 
+.wrapper:active .slider__article{
+    color: #AB3535;
+    transition: .4s;
+}
 
 .svg__arrow{
     stroke: #D93D3D; 
@@ -80,5 +88,10 @@
 
 .wrapper:hover .svg__arrow{
     stroke: #E45C5C;
+    transition: .4s;
+}
+
+.wrapper:active .svg__arrow{
+    stroke: #AB3535;
     transition: .4s;
 }

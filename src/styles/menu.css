@@ -14,6 +14,7 @@
     transition: .3s;
 }
 
+
 .blur{
     width: 100vw;
     height: 100vh;
@@ -47,12 +48,25 @@
     margin-left: 200px;
 }
 
+
 .burger-btn__svg{
     fill: #161619;
+    transition: .4s;
 }
+
 
 [data-theme='dark'] .burger-btn__svg{
     fill: #F2F2F2;
+}
+
+.burger-btn:hover .burger-btn__svg{
+    fill: #E45C5C;
+    transition: .4s;
+}
+
+.burger-btn:active .burger-btn__svg{
+    fill: #AB3535;
+    transition: .4s;
 }
 
 .popup__content{

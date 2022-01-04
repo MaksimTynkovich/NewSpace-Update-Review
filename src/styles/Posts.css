@@ -74,6 +74,7 @@
     text-align: center;
     letter-spacing: 0.05em;
     cursor: pointer;
+    transition: background-color .4s;
 }
 
 .first__level__block .tag:hover{
@@ -116,6 +117,11 @@
     letter-spacing: 0.05em;
     cursor: pointer;
     margin-right: 12px;
+    transition: background-color .4s;
+}
+
+.blog__links .nav__tag1:active{
+    color: #AB3535;
 }
 
 .blog__links .nav__tag2{
@@ -128,6 +134,11 @@
     text-align: center;
     letter-spacing: 0.05em;
     cursor: pointer;
+    transition: background-color .4s;
+}
+
+.blog__links .nav__tag2:active{
+    color: #AB3535;
 }
 
 .blog__links .nav__tag1:hover{
@@ -193,6 +204,29 @@
     cursor: pointer;
 }
 
+.infinity__block .tag{
+    font-family: 'Lato', sans-serif;
+    background-color: #D93D3D;
+    font-size: 12px;
+    padding: 0px 8px 4px;
+    width: 62px;
+    height: 17px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+
+.infinity__block .tag:hover{
+    background-color: #E45C5C;
+    transition: .4s;
+}
+
+.infinity__block .tag:active{
+    background-color: #AB3535;
+}
+
 .infinity__block .title{
     font-size: 20px;
     text-transform: uppercase;
@@ -213,6 +247,17 @@
     text-align: center;
     letter-spacing: 0.05em;
     cursor: pointer;
+    transition: background-color .4s;
+}
+
+
+.infinity__block__banner .tag:hover{
+    background-color: #E45C5C;
+    transition: .4s;
+}
+
+.infinity__block__banner .tag:active{
+    background-color: #AB3535;
 }
 
 .infinity__block__banner .info{

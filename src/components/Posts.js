@@ -101,7 +101,7 @@ function Posts() {
                     </div>
                     <div className='infinity__block__banner'>
                         <div className='img'><img src={reviews7} /></div>
-                        <div className='info'><div className='tag'>Элекстромобили</div><div className='time'>9 ноября, 2020</div></div>
+                        <div className='info'><div className='tag'>Электромобили</div><div className='time'>9 ноября, 2020</div></div>
                         <div className='title'>Рост Tesla на фоне нехватки микросхем показывает острую потребность в инновациях в автомобильном секторе </div>
                     </div>
                     <div className='infinity__block'>
@@ -115,7 +115,7 @@ function Posts() {
                         <div className='title'>Ship 20 успешно прошёл крио-тест! </div>
                     </div>
                     <div className='infinity__block'>
-                        <div className='img'><img src={blog2} /></div>
+                        <div className='img'><img src={reviews5} /></div>
                         <div className='info'><div className='tag'>Space X</div><div className='time'>9 ноября, 2020</div></div>
                         <div className='title'>Ship 20 успешно прошёл крио-тест! </div>
                     </div>
