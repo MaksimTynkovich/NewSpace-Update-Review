@@ -66,6 +66,10 @@ a{
     transition: .4s;
 }
 
+.Navbar__links:active{
+    color: #D93D3D;
+}
+
 .header__after{
     background-color: #fff;
     margin-top: 100px;
