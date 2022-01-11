@@ -3,6 +3,7 @@ import HomePage from './HomePage';
 import BlogPage from './blogPage';
 import { Routes, Route, Navigate, BrowserRouter, Link, useLocation } from 'react-router-dom';
 import { useLayoutEffect } from 'react'
+import TestPage from './TestPage';
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
         <Routes>
         <Route index element={<HomePage />} />
           <Route path="BlogPage" element={<BlogPage />} />
+          <Route path="TestPage" element={<TestPage />} />
         </Routes>
       </Wrapper>
     </BrowserRouter>

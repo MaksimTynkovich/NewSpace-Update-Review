@@ -3,7 +3,7 @@ import '../styles/Header.css';
 
 function Header() {
 
-    let [check, setCheck] = useState(false)
+    const [check, setCheck] = useState(false)
     function switchMode() {
         if (document.documentElement.hasAttribute('data-theme')) {
             document.documentElement.removeAttribute('data-theme');
@@ -94,7 +94,7 @@ function Header() {
                             </span>
                         </div>
                         <div className="header__enter">войти</div>
-                    </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -102,5 +102,3 @@ function Header() {
 }
 
 export default Header;
-
-

@@ -10,10 +10,22 @@ import reviews6 from '../img/reviews6.jpg'
 import reviews7 from '../img/reviews7.jpg'
 import ad from '../img/ad.jpg'
 import { Link } from 'react-router-dom'
+import PostElement from './PostElement';
+import {useState} from 'react'
 
 function Posts() {
+    const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
+    const time = new Date()
+    const [posts, setPosts] = useState([
+        {id: 1, title: 'Javascript1', body: 'Description'},
+        {id: 2, title: 'Javascript2', body: 'Description'},
+        {id: 3, title: 'Javascript3', body: 'Description'},
+        {id: 4, title: 'Javascript4', body: 'Description'},
+        {id: 5, title: 'Javascript5', body: 'Description'},
+      ])
     return (
         <div className='posts'>
+
             <div className='container'>
                 <div className='first__level'>
                     <Link to='BlogPage'>
@@ -114,6 +126,9 @@ function Posts() {
                         <div className='info'><div className='tag'>Space X</div><div className='time'>9 ноября, 2020</div></div>
                         <div className='title'>Ship 20 успешно прошёл крио-тест! </div>
                     </div>
+                    <PostElement title={'Ship 20 успешно прошёл крио-тест!'} tag={'space X'} date={time.getDate()} month={months[time.getMonth()]} year={time.getFullYear()}/>
+                    <PostElement />
+                    <PostElement />
                     <div className='infinity__block'>
                         <div className='img'><img src={reviews5} /></div>
                         <div className='info'><div className='tag'>Space X</div><div className='time'>9 ноября, 2020</div></div>
